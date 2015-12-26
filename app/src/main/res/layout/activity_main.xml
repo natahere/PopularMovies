@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- The grid from content_main gets included, having this include key word would help in swapping layouts in future -->
+    <include layout="@layout/content_main" />
+
+
+</LinearLayout>

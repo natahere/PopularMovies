@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#F2F5F4"
+    android:orientation="vertical"
+    android:weightSum="0.7">
+
+    <!-- Layout for showing the Moview Details once a particular movie image is clicked -->
+
+    <TextView
+        android:id="@+id/origtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkblue"
+        android:gravity="center"
+        android:paddingLeft="30sp"
+        android:text="test"
+        android:textAlignment="textStart"
+        android:textColor="#F2F5F4"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp">
+
+        <ImageView
+            android:id="@+id/posterimg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30sp">
+
+            <TextView
+                android:id="@+id/releaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff010101"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/voteAverage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff010101"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+
+            android:textColor="#ff010101" />
+    </LinearLayout>
+
+</LinearLayout>
